@@ -18,7 +18,10 @@ reg [3:0]Count = 0;
 
 reg flg = 0;
 reg flg2 = 0;
+reg reflg = 1;
+reg cmflg = 1;
 reg re = 0;
+reg cm = 0;
 
 reg [2:0]light = 0;
 
@@ -34,7 +37,7 @@ always @(posedge(CLK))begin
 
     if(SW_2 == 0)begin	//タイマースタートflg
 	   if(flg == 0)begin
-	      re <= 1;
+	      cm <= 1;
 		  flg <= 1;
 	   end
 	   else begin
@@ -60,20 +63,29 @@ always @(posedge(div_clk))begin
 	if(flg == 0)begin
 	end
 	else begin
-	   if(re == 1)begin
+	
+	   if(re == reflg)begin
 	       Count <= memo;
-	       re <= 0;
+	       reflg <= !reflg;
 	   end
+	   
+	   if(cm == cmflg)begin
+	       Count <= memo;
+	       cmflg <= !cmflg;
+	   end
+	   
 	   if(flg2 == 0)begin
            light = 3'b000;
            flg2 <= 1;
 	   end
+	   
 	   if(Count == 0)begin
 	       light <= 3'b100;
-	       flg2 <= 0;
-	   end
+           flg2 <= 0;
+       end
 	   else begin
 	       Count <= Count - 1;
+           	       
 	   end 
 	end
 end
