@@ -2,45 +2,67 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Jul 17 13:14:06 2023
-# Process ID: 3084
-# Current directory: C:/Users/lumin/Desktop/circuit/kitchen_timer/kitchen_timer.runs/impl_1
+# Start of session at: Mon Jul 17 14:01:12 2023
+# Process ID: 1244
+# Current directory: C:/Users/1cda1201/Downloads/KitchinTimer-last20230717/kitchen_timer.runs/impl_1
 # Command line: vivado.exe -log kitchen_timer.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source kitchen_timer.tcl -notrace
-# Log file: C:/Users/lumin/Desktop/circuit/kitchen_timer/kitchen_timer.runs/impl_1/kitchen_timer.vdi
-# Journal file: C:/Users/lumin/Desktop/circuit/kitchen_timer/kitchen_timer.runs/impl_1\vivado.jou
+# Log file: C:/Users/1cda1201/Downloads/KitchinTimer-last20230717/kitchen_timer.runs/impl_1/kitchen_timer.vdi
+# Journal file: C:/Users/1cda1201/Downloads/KitchinTimer-last20230717/kitchen_timer.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source kitchen_timer.tcl -notrace
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
+Command: open_checkpoint kitchen_timer_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 219.844 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.2
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/lumin/Desktop/circuit/kitchen_timer/kitchen_timer.srcs/constrs_1/new/Arty_constraints.xdc]
-Finished Parsing XDC File [C:/Users/lumin/Desktop/circuit/kitchen_timer/kitchen_timer.srcs/constrs_1/new/Arty_constraints.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Parsing XDC File [C:/Users/1cda1201/Downloads/KitchinTimer-last20230717/kitchen_timer.runs/impl_1/.Xil/Vivado-1244-cc1640645/dcp3/kitchen_timer.xdc]
+Finished Parsing XDC File [C:/Users/1cda1201/Downloads/KitchinTimer-last20230717/kitchen_timer.runs/impl_1/.Xil/Vivado-1244-cc1640645/dcp3/kitchen_timer.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 471.914 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 471.914 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 476.305 ; gain = 254.637
-Command: opt_design
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
+open_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 475.984 ; gain = 256.141
+Command: write_bitstream -force kitchen_timer.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
-Running DRC as a precondition to command opt_design
-
-Starting DRC Task
-Command: report_drc (run_mandatory_drcs) for: opt_checks
+Running DRC as a precondition to command write_bitstream
+Command: report_drc (run_mandatory_drcs) for: bitstream_checks
 INFO: [DRC 23-27] Running DRC with 2 threads
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net re has multiple drivers: re_reg/Q, and re_reg__0/Q.
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
 report_drc (run_mandatory_drcs) completed successfully
-INFO: [Project 1-461] DRC finished with 1 Errors
-INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
-ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
-
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 485.945 ; gain = 9.641
-11 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
-opt_design failed
-ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
-
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 17 13:14:26 2023...
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./kitchen_timer.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+15 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 842.418 ; gain = 366.434
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 17 14:01:31 2023...

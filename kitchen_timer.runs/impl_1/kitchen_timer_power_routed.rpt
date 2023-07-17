@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Mon Jul 17 11:12:03 2023
-| Host             : DESKTOP-DEVELOP running 64-bit major release  (build 9200)
+| Date             : Mon Jul 17 14:00:25 2023
+| Host             : cc1640645 running 64-bit major release  (build 9200)
 | Command          : report_power -file kitchen_timer_power_routed.rpt -pb kitchen_timer_power_summary_routed.pb -rpx kitchen_timer_power_routed.rpx
 | Design           : kitchen_timer
 | Device           : xc7a35ticsg324-1L
@@ -50,12 +50,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       76 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       24 |     20800 |            0.12 |
-|   Register     |    <0.001 |       41 |     41600 |            0.10 |
+| Slice Logic    |    <0.001 |       84 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       25 |     20800 |            0.12 |
+|   Register     |    <0.001 |       45 |     41600 |            0.11 |
 |   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       65 |       --- |             --- |
+| Signals        |    <0.001 |       68 |       --- |             --- |
 | I/O            |     0.005 |       12 |       210 |            5.71 |
 | Static Power   |     0.062 |          |           |                 |
 | Total          |     0.068 |          |           |                 |

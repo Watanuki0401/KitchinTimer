@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/lumin/Desktop/circuit/kitchen_timer/kitchen_timer.runs/impl_1'
+HD_PWD='C:/Users/1cda1201/Downloads/KitchinTimer-last20230717/kitchen_timer.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log kitchen_timer.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source kitchen_timer.tcl -notrace
 
 

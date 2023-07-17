@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1689567163">
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1689569948">
   <File Type="PWROPT-DRC" Name="kitchen_timer_drc_pwropted.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="kitchen_timer_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="kitchen_timer_timing_summary_init.rpt"/>

@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Mon Jul 17 11:12:02 2023
-| Host         : DESKTOP-DEVELOP running 64-bit major release  (build 9200)
+| Date         : Mon Jul 17 14:00:24 2023
+| Host         : cc1640645 running 64-bit major release  (build 9200)
 | Command      : report_drc -file kitchen_timer_drc_routed.rpt -pb kitchen_timer_drc_routed.pb -rpx kitchen_timer_drc_routed.rpx
 | Design       : kitchen_timer
 | Device       : xc7a35ticsg324-1L
