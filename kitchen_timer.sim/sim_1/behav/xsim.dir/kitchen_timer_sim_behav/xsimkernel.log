@@ -1,0 +1,4 @@
+Running: xsim.dir/kitchen_timer_sim_behav/xsimk.exe -simmode gui -wdb kitchen_timer_sim_behav.wdb -simrunnum 0 -socket 58488
+Design successfully loaded
+Design Loading Memory Usage: 7376 KB (Peak: 7376 KB)
+Design Loading CPU Usage: 61 ms
