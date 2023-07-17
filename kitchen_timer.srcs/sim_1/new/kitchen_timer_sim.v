@@ -53,7 +53,7 @@ end
      
 kitchen_timer kitchen_timer_sim(
         .CLK(sim_clk),
-        .RESET_SW0(sim_reset),
+        .RESET_SW(sim_reset),
         .SW_1(SW_1),
         .SW_2(SW_2),
         .SW_3(SW_3),
